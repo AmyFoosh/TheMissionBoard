@@ -1,0 +1,236 @@
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- GENERAL SETTINGS -- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- APP CONTAINER -- */
+
+#app {
+    text-align: center;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+
+    #app {
+        flex-wrap: wrap;
+    }
+}
+
+#views-counter-container {
+    padding: 4px;
+    position: absolute;
+    left: 80%;
+    background-color: white;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- QUEST REQUEST MENU */
+
+/* Quest Container */
+#quest-request-container {
+    margin: 20px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#quest-request-container input:focus,
+#quest-request-container textarea:focus,
+#select-quest-difficulty:focus {
+    outline: none;
+}
+
+#quest-request-container input,
+#quest-request-container textarea {
+    border: 1px solid black;
+    margin: 4px;
+    resize: none;
+    text-align: center;
+}
+
+#quest-menu-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightseagreen;
+    padding: 4px;
+}
+
+#quest-menu-title img {
+    width: 20px;
+    margin: 8px;
+}
+
+#quest-menu-body {
+    padding: 12px;
+}
+
+#quest-redward {
+    width: 60px;
+}
+
+#create-quest-request-btn {
+    cursor: pointer;
+    margin: 4px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    color: rgb(30, 30, 30);
+    background-color: lightseagreen;
+    box-shadow: 0px 0px 4px 4px rgba(32, 170, 170, 0.4);
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+#create-quest-request-btn:hover {
+    color: black;
+    background-color: lightskyblue;
+}
+
+#create-quest-request-btn:active {
+    color: red;
+    background-color: brown;
+    box-shadow: 0px 0px 4px 4px red;
+}
+
+/* Stars Styling */
+.difficulty-stars {
+    margin: 4px 0px 4px 0px;
+    padding: 0px 4px 0px 4px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- QUEST LIST --*/
+
+#quest-list-title {
+    background-color: rgb(230, 230, 230);
+    padding: 12px;
+}
+
+#quest-available-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+#select-quest-difficulty {
+    text-align: center;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 4px;
+    font-size: 16px;
+    background-color: white;
+
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+#select-quest-difficulty option {
+    background-color: white;
+    text-align: center;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- QUEST CARD -- */
+
+.quest-card {
+    margin: 12px;
+    width: 200px;
+    text-align: center;
+    color: rgb(50, 50, 50);
+    border-radius: 12px;
+    background-color: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.quest-card-title {
+    border-radius: 12px 12px 0px 0px;
+    padding: 12px;
+}
+
+.quest-card-description {
+    padding: 20px;
+}
+
+.quest-card-button {
+    padding: 4px;
+    background-color: white;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.quest-card-button button {
+    cursor: pointer;
+    color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 12px;
+    background-color: lightsteelblue;
+    margin: 4px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0px 0px 4px 4px rgba(176, 196, 222, 0.4);
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.quest-card-button button:hover {
+    color: white;
+    background-color: lightslategray;
+}
+
+.quest-card-button button:active {
+    color: red;
+    background-color: brown;
+    box-shadow: 0px 0px 4px 4px red;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */
+
+/* -- STARS DIFFICULTY STYLE -- */
+
+.one-star {
+    background-color: lightblue;
+}
+
+.two-star {
+    background-color: lightgreen;
+}
+
+.three-star {
+    background-color: lightpink;
+}
+
+.four-star {
+    background-color: lightsalmon;
+}
+
+.five-star {
+    background-color: lightslategrey;
+}
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- */

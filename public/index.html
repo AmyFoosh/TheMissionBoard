@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+
+  <!-- METADATA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+
+  <!-- PAGE TITLE AND FAV ICON -->
+  <title>The Mission Board</title>
+  <link rel="shortcut icon" href="./src/img/fav-icon.png" type="image/x-icon">
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="./src/css/styles.css">
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+</head>
+
+<body>
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+
+  <!-- APP -->
+  <div id="app">
+
+    <div id="views-counter-container">
+      <p id="views-display">Views: -999</p>
+    </div>
+
+    <!-- Quest Request Menu -->
+    <div id="quest-request-container">
+
+      <!-- Menu Title -->
+      <div id="quest-menu-title">
+        <img src="./src/img/pin.png" alt="">
+        <h1>Request</h1>
+      </div>
+
+      <div id="quest-menu-body">
+
+        <label>Author</label>
+        <br>
+        <input id="quest-author-name" type="text" placeholder="e.g. AmyFoosh">
+        <br>
+
+        <label>Name</label>
+        <br>
+        <input id="quest-name-input" maxlength="30" type="text" placeholder="e.g. Kill 20 Slimes">
+        <br>
+
+        <label>Description</label>
+        <br>
+        <textarea id="quest-description-input" maxlength="80"
+          placeholder="e.g. Go to Farm Ville and kill all enemies."></textarea>
+        <br>
+
+        <label>Quest Difficulty</label>
+        <div id="quest-difficulty-stars-container">
+        </div>
+
+        <p>
+          Redward
+          <input id="quest-redward" type="number" max="20">
+          coins.
+        </p>
+
+        <button id="create-quest-request-btn">
+          Create Quest Request
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Quest Available List -->
+    <div>
+
+      <div id="quest-list-title">
+        <h1>Quest List</h1>
+
+        <select id="select-quest-difficulty">
+          <option value="allStars">All ★</option>
+          <option value="oneStar">1 Star ★</option>
+          <option value="twoStars">2 Stars ★★</option>
+          <option value="threeStars">3 Stars ★★★</option>
+          <option value="fourStars">4 Stars ★★★★</option>
+          <option value="fiveStars">5 Stars ★★★★★</option>
+        </select>
+      </div>
+
+      <div id="quest-available-list">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+
+  <!-- JS SCRIPTS -->
+  <script src="./src/js/app.js" type="module"></script>
+
+  <!-- // ---- ---- ---- ---- ---- ---- ---- ---- //-->
+</body>
+
+</html>
